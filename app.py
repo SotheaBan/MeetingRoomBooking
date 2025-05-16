@@ -31,10 +31,15 @@ def login():
 
     return render_template("authentication/loginPage.html")
 
+
 @app.route("/home")
 def home_page():
     return render_template("homepage.html")
 
+
+@app.route("/mybooking")
+def my_booking():
+    return render_template("mybooking.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
